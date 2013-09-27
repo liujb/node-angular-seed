@@ -12,10 +12,10 @@
    bower.json  描述我们需要的是哪些包
 2、安装指定的Commit和指定的zip：
    bower从0.93版本开始支持安装指定的commit和zip
-   指明zip包，在配置文件中这么写：
-      "bootstrap": "https://github.com/twbs/bootstrap/archive/3.0.0-wip.zip"
-   或者指明commit的id，使用命令这么写：
-      bower install 'git://github.com/yeoman/stringify-object.git#d2895fb97d'
+   指明zip包，建议使用这种方式，直接得到结果，在配置文件中这么写：
+      "angular-bootstrap":"https://github.com/angular-ui/bootstrap/archive/bootstrap3_bis2.zip"
+   或者指明commit的id，但这样将需要在本地build一遍，所以不提倡这么写：
+      "angular-bootstrap":"https://github.com/angular-ui/bootstrap.git#8cbeff0ffe960f5f46b9b886fa3db2d0c1ff2a9f"
    当然，"~1.0.8"表示大于1.08版
 3、安装命令写入到json
    我们使用bower命令，均在项目根目录下。该目录由bower.json，只要我们加上-F，可写入依赖。加-D，可写入开发依赖。
