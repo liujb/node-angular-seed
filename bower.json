@@ -1,0 +1,16 @@
+{
+  "name": "Queue",
+  "version": "0.0.1",
+  "dependencies": {
+      "angular": "1.2.0-rc.2",
+    "angular-resource": "1.2.0-rc.2",
+    "angular-cookies": "1.2.0-rc.2",
+    "angular-sanitize": "1.2.0-rc.2",
+    "bootstrap": "~3.0.0",
+    "angular-bootstrap":"https://github.com/angular-ui/bootstrap/archive/bootstrap3_bis2.zip"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.0-rc.2",
+    "angular-scenario": "1.2.0-rc.2"
+  }
+}
