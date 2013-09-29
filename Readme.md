@@ -36,3 +36,7 @@ E:\Queue>Set CHROME_BIN="C:\Program Files (x86)\Google\Chrome\Application\CHROME
 2、运行node scripts\web-server.js
 3、运行scripts\e2e-test.bat，启动e2e测试
 4、运行sctipts\test.bat，启动单元测试
+改用无界面的浏览器，需要执行：
+1、npm install phantomjs -g
+2、npm install karma-phantomjs-launcher -g
+3、修改两个karma配置文件的浏览器参数，改为phantomjs、注册phantomjs即可
