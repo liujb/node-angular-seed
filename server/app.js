@@ -22,7 +22,8 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 //app.use(app.router);
-app.use(express.static(path.join(__dirname, 'app')));
+//console.log(path.join(__dirname, '..//app'))
+app.use(express.static(path.join(__dirname, '..//app')));
 
 // development only
 if ('development' == app.get('env')) {
