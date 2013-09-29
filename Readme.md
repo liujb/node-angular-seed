@@ -29,3 +29,10 @@
     已经是正式版，直接处理即可
 3、Angular-bootstrap最新版本
     这个比较麻烦，我们指定git所在位置，然后重新编译
+
+###运行e2e测试和单元测试：
+1、在命令窗口，设置环境变量，这样chrome才能启动：
+E:\Queue>Set CHROME_BIN="C:\Program Files (x86)\Google\Chrome\Application\CHROME\chrome.exe"
+2、运行node scripts\web-server.js
+3、运行scripts\e2e-test.bat，启动e2e测试
+4、运行sctipts\test.bat，启动单元测试
