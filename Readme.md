@@ -1,3 +1,7 @@
+#使用说明
+
+##获取yeoman-bootstrap3-angular-express-seed
+>
 
 ##使用Bower
 
