@@ -40,3 +40,5 @@ E:\Queue>Set CHROME_BIN="C:\Program Files (x86)\Google\Chrome\Application\CHROME
 1、npm install phantomjs -g
 2、npm install karma-phantomjs-launcher -g
 3、修改两个karma配置文件的浏览器参数，改为phantomjs、注册phantomjs即可
+4、单次运行测试时，phantomjs不能正常退出，应定义环境变量：
+set PHANTOMJS_BIN=C:/Users/Administrator/AppData/Roaming/npm/node_modules/phantomjs/lib/phantom/phantomjs.exe

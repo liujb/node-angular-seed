@@ -21,18 +21,12 @@ module.exports = function(config){
     },
 
     plugins : [
-            'karma-junit-reporter',
             'karma-phantomjs-launcher',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
             'karma-ng-scenario'    
-            ],
-
-    junitReporter : {
-      outputFile: 'test_out/e2e.xml',
-      suite: 'e2e'
-    }
+            ]
 
 })}
 
