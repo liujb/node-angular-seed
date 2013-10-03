@@ -32,6 +32,17 @@
 2.bootstrap最新版本(3.0)已经是正式版，直接处理即可  
 3.angular-bootstrap最新版本,这个比较麻烦，我们指定git所在位置，然后重新编译  
 
+
+##Webstorm7集成karma
+
+1运行e2e测试：
+Run|Edit configuration
+然后点加号，增加karma运行配置
+config file设为：E:\yeoman-bootstrap3-angular-express-seed\config\karma-e2e.conf.js
+这是我们实际设置的。要注意：需要加入phantomjs的环境变量，加入后需要重启电脑确认。同时，测试运行前应启动express服务器。
+1我们没有在项目目录安装karma，所以运行配置中，使用的-g安装的karma，其目录路径预设为：
+karma node package：C:\Users\Administrator\AppData\Roaming\npm\node_modules\karma
+ 
 ##简单常识：
 
 1.项目根目录bower的两个配置文件含义：  
