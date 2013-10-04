@@ -19,12 +19,12 @@ module.exports = function(config){
     proxies : {
       '/': 'http://localhost:3000/'
     },
+    urlRoot: '__karma__',
+    reporters: ['dots'],
 
     plugins : [
             'karma-phantomjs-launcher',
-            'karma-chrome-launcher',
-            'karma-firefox-launcher',
-            'karma-jasmine',
+            //'karma-jasmine',
             'karma-ng-scenario'    
             ]
 
