@@ -64,6 +64,13 @@ module.exports = function (grunt) {
         //'watch',
         'karma:e2e'
     ]);
+
+    grunt.registerTask('test',[
+        'express:dev',
+        'karma:unit',
+        //'watch',
+        'karma:e2e'
+    ]);
     grunt.registerTask('default', ['server']);
     
 
