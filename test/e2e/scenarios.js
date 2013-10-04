@@ -10,7 +10,7 @@ describe('my app', function() {
 
 
   it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser().location().url()).toBe("增加的/view1");
+    expect(browser().location().url()).toBe("/view1");
   });
 
 

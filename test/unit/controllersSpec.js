@@ -7,7 +7,7 @@ describe('controllers', function(){
 
 
   it('should ....', inject(function() {
-    expect(true).toEqual(false)
+    //expect(true).toEqual(false)
   }));
 
   it('should ....', inject(function() {

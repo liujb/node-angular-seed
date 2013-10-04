@@ -15,7 +15,6 @@
     "grunt-express-server": "~0.4.3",
     "grunt-karma": "~0.6.2",
     "matchdep": "~0.1.2",
-    "grunt-open": "~0.2.2",
     "karma-ng-scenario": "~0.1.0"
   }
 }
