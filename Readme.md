@@ -22,8 +22,9 @@
         Set CHROME_BIN="C:\Program Files (x86)\Google\Chrome\Application\CHROME\chrome.exe"
 
     4.运行app.js，相关运行配置已经创建
-    5.运行e2e测试：命令窗口下执行scripts\e2e-test.bat
-    6.运行前端单元测试：命令窗口下执行scripts\test.bat
+    5.运行e2e测试：命令窗口下执行grunt E2eTest
+    6.运行前端单元测试：命令窗口下执行grunt UnitTest  
+    7.同时执行单元测试和e2e测试：命令窗口下执行grunt test
 
 ##使用的前端包：
 
