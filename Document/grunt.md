@@ -44,17 +44,16 @@ GruntFile.js的watch的写法,我们出现一个问题：
             }
         }//watch
 
- 这导致watch不停报错以至堆栈溢出。'./server/app.js'改为 'server\\app.js'后正常。
+ 这导致watch不停报错以至堆栈溢出。'./server/app.js'改为 'server\\app.js'后正常。之后应改为正常的path写法以适应windows和
+ linux两种情形。
+ 
  现在我们做到了：
      运行grunt，3000端口打开，我们在浏览器可以访问，同时，我们修改了app.js文件后，服务端会自动重新启动。
      
      
 ##Grunt与WebStorm集成：
 file|settings|external tools，然后点+
-
 增加一个工具
-
-
 1、group填写grunt，表示这类任务均归于grunt菜单
 
 2、name：default
@@ -67,3 +66,5 @@ file|settings|external tools，然后点+
 
 
 添加之后，在编辑器中右键，可以看到group菜单组，有一个字菜单名为default，点击则可正常运行。
+
+##grunt运行前端的单元测试

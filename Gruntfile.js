@@ -32,14 +32,38 @@ module.exports = function (grunt) {
                     nospawn: true //Without this option specified express won't be reloaded
                 }
             }
-        }//watch
+        },//watch
+
+        karma: {
+            unit: {
+                configFile: './config/karma.conf.js',
+                //background: true,
+                singleRun: true
+            },
+            e2e: {
+                configFile: './config/karma-e2e.conf.js',
+                //background: true,
+                singleRun: true
+            }
+        }
     })//init
   
     grunt.registerTask('server', [
         'express:dev',
-        'watch'
+        'watch'        
+    ]);
+    
+    grunt.registerTask('UnitTest',[
+        'express:dev',
+        //'watch',
+        'karma:unit'
     ]);
 
+    grunt.registerTask('E2eTest',[
+        'express:dev',
+        //'watch',
+        'karma:e2e'
+    ]);
     grunt.registerTask('default', ['server']);
     
 
