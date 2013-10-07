@@ -62,4 +62,21 @@ karma node package：C:\Users\Administrator\AppData\Roaming\npm\node_modules\kar
 4.局域网访问：windows下，进入控制面板\所有控制面板项\Windows 防火墙，然后在左侧选择：允许应用通过windows防火墙进行通信。  
     此后，选node.js，在网络类型中将专用和共用都勾上。通过手机的安卓浏览器访问，本模版的字体非常小，后面需要使用bootstrap3  
     优化。不过angular的表现不错，导航按钮能正常工作。这样测试下，能增进些感性的认知。  
+    
+#服务端测试：
 
+1大家首先会想到，既然同是使用jasmine，那么服务端测试是否也需要使用karma呢？
+1请注意：karma是前端的测试运行器，主要的概念是前端使用何种浏览器、使用何种框架格式来写单元测试,方便不同人以不同格式书写
+1单元测试、在不同浏览器上测试。但服务端测试，我们安装的jasmine-node，实际上是无需指定浏览器的、当然也根本用不着指定何种
+单元测试格式。所以追求同样使用karma来运行测试是无意义的。
+1我们只需要执行grunt任务即可，不需要通过karma来运行服务端的单元测试。
+
+#服务端测试的执行步骤
+1全局安装jasmine-node
+2.创建服务端单元测试运行配置：
+node.js路径：默认
+working dir：项目根目录，默认。
+js文件路径：C:\Users\Administrator\AppData\Roaming\npm\node_modules\jasmine-node\bin\jasmine-node
+aplication参数：./test/server/ --verbose
+3、我们约定将服务端测试放在项目的test\server目录下，后缀为*spec.js
+4、grunt执行jasmine-node测试：这个是需要处理的，各类测试灵活配置、前后端一次跑完...
