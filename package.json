@@ -16,7 +16,6 @@
     "grunt-express-server": "~0.4.3",
     "grunt-karma": "~0.6.2",
     "matchdep": "~0.1.2",
-    "grunt-jasmine-node": "~0.1.0",
-    "grunt-jasmine-node-coverage": "~0.1.6"
+    "grunt-jasmine-node": "~0.1.0"
   }
 }
