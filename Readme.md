@@ -143,3 +143,10 @@
 ###可在terminal中执行命令
     我们无需切换到命令窗口，Terminal窗口本身是在项目的根目录下
 ###集成了Karma
+
+##V0.1 ChangeLog
+    使用bower管理前端依赖的包
+    使用express server取代angular-seed项目中的简单脚本，原有的测试均能运行    
+    使用Grunt运行前端单元测试、e2e测试和服务端测试
+    运行前端测试时自动启动express服务器 
+    
