@@ -80,3 +80,12 @@ js文件路径：C:\Users\Administrator\AppData\Roaming\npm\node_modules\jasmine
 aplication参数：./test/server/ --verbose
 3、我们约定将服务端测试放在项目的test\server目录下，后缀为*spec.js
 4、grunt执行jasmine-node测试：这个是需要处理的，各类测试灵活配置、前后端一次跑完...
+
+#karma能否全局安装？
+我们全局安装karma后，前端项目中缺少karma-ng-scenario，当然，在项目的开发依赖中加上的话，karma也会全套的安装在项目根目录。
+我们将karma-ng-scenario全局安装，则单元测试和e2e测试会报错：找不到karma
+这是很常见的问题，解决方法是设置系统环境变量NODE_PATH,其值为全局npm目录，如下：
+C:\Users\Administrator\AppData\Roaming\npm\node_modules
+重启后，在项目本地不安装karma的情形下，单元测试顺利运行。
+
+#grunt运行jasmine-node的测试：
