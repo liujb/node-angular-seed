@@ -33,12 +33,11 @@ module.exports = function (grunt) {
                 }
             }
         },//watch
-
-        'jasmine-node': {
-                run: {
-                        spec: 'test/server/'
-                }
-                },
+        jasmine_node: {
+            projectRoot: "./test/server",  //这里是指测试文件放的地方。变量名起的太stupid!
+            requirejs: false,
+            forceExit: true
+        },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
