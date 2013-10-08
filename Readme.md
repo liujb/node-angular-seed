@@ -11,7 +11,7 @@
 ##运行yeoman-bootstrap3-angular-express-seed
 
     1.全局安装yeoman及相应的npm包：
-        npm install -g yo bower grunt-cli karma jasmine phantomjs
+        npm install -g yo bower grunt-cli karma karma-ng-scenario jasmine phantomjs
     2.在yeoman-bootstrap3-angular-express-seed目录下，打开命令行窗口
         npm install
         bower install

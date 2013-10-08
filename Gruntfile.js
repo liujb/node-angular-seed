@@ -34,6 +34,11 @@ module.exports = function (grunt) {
             }
         },//watch
 
+        'jasmine-node': {
+                run: {
+                        spec: 'test/server/'
+                }
+                },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
@@ -71,6 +76,8 @@ module.exports = function (grunt) {
         //'watch',
         'karma:e2e'
     ]);
+    
+
     grunt.registerTask('default', ['server']);
     
 
