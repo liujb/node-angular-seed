@@ -141,7 +141,16 @@ module.exports = function (grunt) {
         //'watch',
         'karma:e2e'
     ]);
-    grunt.registerTask('default', ['server']);
+    
+    grunt.registerTask('build',[
+        'clean',
+        'test',
+        'copy',
+        'htmlmin',
+        'uglify',
+        'cssmin'
+    ])
+    grunt.registerTask('default', ['build']);
     
 
 }
