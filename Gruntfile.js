@@ -62,6 +62,28 @@ module.exports = function (grunt) {
                 ]
             }
         },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeCommentsFromCDATA: true
+                     // https://github.com/yeoman/grunt-usemin/issues/44
+                     //collapseWhitespace: true,
+                    /* collapseBooleanAttributes: true,
+                     removeAttributeQuotes: true,
+                     removeRedundantAttributes: true,
+                     useShortDoctype: true,
+                     removeEmptyAttributes: true,
+                     removeOptionalTags: true*/
+                },
+                files: [
+                    {
+                        expand: true,
+                        src: ['app/**/*.html', 'app/**/partials/*.html'],
+                        dest: 'dist'
+                    }
+                ]
+            }
+        },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
