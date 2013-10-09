@@ -53,6 +53,15 @@ module.exports = function (grunt) {
             },
             server: '.tmp'
         },
+        copy: {
+            dist: {
+                files: [
+                    {expand: true,src: ['app/**'],dest: 'dist'},
+                    {expand: true,src: ['server/**'],dest: 'dist'},
+                    {expand: true,src: ['package.json'],dest: 'dist'}
+                ]
+            }
+        },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
@@ -91,8 +100,6 @@ module.exports = function (grunt) {
         //'watch',
         'karma:e2e'
     ]);
-    
-
     grunt.registerTask('default', ['server']);
     
 
