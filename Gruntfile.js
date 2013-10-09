@@ -65,7 +65,7 @@ module.exports = function (grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    removeCommentsFromCDATA: true
+                    //removeCommentsFromCDATA: true
                      // https://github.com/yeoman/grunt-usemin/issues/44
                      //collapseWhitespace: true,
                     /* collapseBooleanAttributes: true,
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['app/**/*.html', 'app/**/partials/*.html'],
+                        src: ['app/**/*.html', 'app/**/partials/*.html','!app/index-async.html'],
                         dest: 'dist'
                     }
                 ]
