@@ -84,6 +84,15 @@ module.exports = function (grunt) {
                 ]
             }
         },
+        uglify: {
+            files: {
+                src: 'dist/app/js/*.js',  // source files mask
+                dest: 'dist/app/js',    // destination folder
+                expand: true,    // allow dynamic building
+                flatten: true,   // remove all unnecessary nesting
+                ext: '.js'   // replace .js to .min.js
+            }
+        },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
