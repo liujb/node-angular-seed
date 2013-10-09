@@ -7,6 +7,7 @@
     2.本地路径：E:\
     3.项目名称：yeoman-bootstrap3-angular-express-seed
     注意，我们的默认分支是develop，此后需要将master分支pull到本地。
+    Webstorm7集成了karma，可在terminal中执行命令，我们无需切换到命令窗口，Terminal窗口本身是在项目的根目录下
 
 ##运行yeoman-bootstrap3-angular-express-seed
 
@@ -139,14 +140,22 @@
     的定义，其名称为jasmine_node，注意是下划线，这和使用grunt-contrib-jasmine-node的时候变量名为jasmine-node不同。
     这个简单的细节折腾了不少时间。
 
-##WebStorm7的新特性：
-###可在terminal中执行命令
-    我们无需切换到命令窗口，Terminal窗口本身是在项目的根目录下
-###集成了Karma
-
 ##V0.1 ChangeLog
     使用bower管理前端依赖的包
     使用express server取代angular-seed项目中的简单脚本，原有的测试均能运行    
     使用Grunt运行前端单元测试、e2e测试和服务端测试
     运行前端测试时自动启动express服务器 
-    
+
+#Todo...    
+##v0.2 build
+    运行单元测试、清理、html压缩、css压缩、图片压缩、拷贝。
+    合并，考虑到angular页面或有不妥，暂不处理
+    我们使用build创建一个可马上拷贝、部署、运行的版本。
+
+##v0.3 前端页面使用bootstrap 3
+处理导航
+处理页面布局
+
+至此项目模版可用，以下工作根据时间充裕程度考虑
+===========================================
+

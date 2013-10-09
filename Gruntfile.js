@@ -38,6 +38,21 @@ module.exports = function (grunt) {
             requirejs: false,
             forceExit: true
         },
+        clean: {
+            dist: {
+                files: [
+                    {
+                        dot: true,
+                        src: [
+                            '.tmp',
+                            'dist/*',
+                            'dist/.git*'
+                        ]
+                    }
+                ]
+            },
+            server: '.tmp'
+        },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',

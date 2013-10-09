@@ -4,6 +4,8 @@ idea
 .DS_Store
 *.DS_Store
 
+dist
+
 lib-cov
 *.seed
 *.log
