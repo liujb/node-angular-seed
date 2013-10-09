@@ -84,6 +84,7 @@ module.exports = function (grunt) {
                 ]
             }
         },
+        //压缩js文件
         uglify: {
             files: {
                 src: 'dist/app/js/*.js',  // source files mask
@@ -91,6 +92,15 @@ module.exports = function (grunt) {
                 expand: true,    // allow dynamic building
                 flatten: true,   // remove all unnecessary nesting
                 ext: '.js'   // replace .js to .min.js
+            }
+        },
+        cssmin: {
+            dist: {
+                files: {
+                    'dist/app/css/app.css': [
+                        'dist/app/css/app.css'
+                    ]
+                }
             }
         },
         karma: {
