@@ -56,15 +56,10 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 files: [
-                    {expand: true,src: ['app/**','!app/lib/**'],dest: 'dist'},
-                    {expand: true,cwd:'app/lib/',src: ['angular/*min.js','!app/lib/**'],dest: 'dist'},
-                    
+                    {expand: true,src: ['app/**'],dest: 'dist'},
                     {expand: true,src: ['server/**'],dest: 'dist'},
                     {expand: true,src: ['package.json'],dest: 'dist'}
                 ]
-            },
-            lib:{
-                
             }
         },
         karma: {
