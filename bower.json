@@ -1,6 +1,6 @@
 {
-  "name": "Queue",
-  "version": "0.0.1",
+  "name": "Node-Angular-Seed",
+  "version": "0.0.2",
   "dependencies": {
       "angular": "1.2.0-rc.2",
       "angular-route":"1.2.0-rc.2",

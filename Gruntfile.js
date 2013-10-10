@@ -134,6 +134,11 @@ module.exports = function (grunt) {
         'karma:e2e'
     ]);
 
+    grunt.registerTask('ServerTest',[
+        'jasmine_node'
+    ]);
+
+
     grunt.registerTask('test',[
         'jasmine_node',
         'express:dev',
