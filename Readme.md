@@ -5,8 +5,8 @@ This project is based on angular-seed,we've made some changes:
 2.using grunt to run unit test and e2e test at front side,remove all scripts  
 3.using grunt and same jasmine to run unit test at server side  
 4.import bootstrap3 for mobile devices friendly  
-5.using grunt to build release 
-6.install karma only with global
+5.using grunt to build release  
+6.install karma only with global  
 
 ## How to use node-angular-seed
 
@@ -27,13 +27,9 @@ npm install -g yo bower grunt-cli karma karma-ng-scenario jasmine jasmine-node p
 
 ### Running the app during development
 
-You can pick one of these options:
-
-* using grunt to start server
-* install node.js and run `scripts/web-server.js`
-
-Then navigate your browser to `http://localhost:<port>` to see the app running in
-your browser.
+You can using grunt to start server  
+    grunt server  
+Then navigate your browser to `http://localhost:<port>` to see the app running in your browser.
 
 
 ### Running tests
